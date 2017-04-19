@@ -1,0 +1,66 @@
+<!doctype html>
+<head>
+  <title>Trabalhando com Grid</title>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 200px 300px 150px 200px;
+      grid-template-rows: 200px 100px 150px;
+      grid-columns-gap: 5px;
+      grid-row-gap: 10px;
+    }
+
+    .item:nth-of-type(4n+1) {background-color: #00897B; }
+    .item:nth-of-type(4n+2) {background-color: #00E676; }
+    .item:nth-of-type(4n+3) {background-color: #FFAB40; }
+    .item:nth-of-type(4n+4) {background-color: #E64A19; }
+
+    .item:nth-of-type(1){
+      background-color: #00897B;
+      grid-column-start: 1 ;
+      grid-column-end: 3;
+      grid-row-start:1;
+      grid-row-end: 3;
+    }
+
+    .item:nth-of-type(2){
+      background-color: #00E676;
+      grid-column: 3 / 5 ;
+      grid-row: 1 / 2;
+    }
+
+    .item:nth-of-type(3){
+      background-color: #FFAB40;
+      grid-area: 1 / 3  / 2 / 5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item"><h1>Bem vindo ao Trabalho com GRID</h1></div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur.</div>
+
+  </div>
+</BODY>
+
+  <script>
+    console.info('Bucentauro carregado com sucesso!');
+  </script>
